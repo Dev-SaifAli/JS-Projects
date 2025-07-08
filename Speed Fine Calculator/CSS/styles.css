@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.989);
+  height: 100vh;
+  font-family: "Montserrat", "Urbanist", sans-serif;
+  background-image: url(https://www.collinsdictionary.com/images/full/motorway_446770915_1000.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#speedFineBox {
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.708);
+  /* backdrop-filter: blur(10px); */
+  /* Optional: glassy blur effect */
+}
+
+#message-text {
+  margin-top: 20px;
+}
+
+#message-text h4 {
+  transition: color 1s ease;
+}
