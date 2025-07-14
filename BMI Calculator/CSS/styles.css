@@ -1,0 +1,29 @@
+body {
+  background: #f9f9f9;
+
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #e9e8e8;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.form-control {
+  background-color: #a8a6a6;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.form-control:focus {
+  background-color: #cfc9c3;
+  color: #fff;
+  box-shadow: none;
+  border-color: #999;
+}
