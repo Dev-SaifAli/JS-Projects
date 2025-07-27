@@ -1,0 +1,97 @@
+/* Background & Wrapper */
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #051923;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+  width: 280px;
+  background: #062a3a;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.6);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px repeat(5, 60px);
+}
+
+/* Display */
+.display {
+  grid-column: 1 / -1;
+  background: #fff;
+  color: #0f2027;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1.2rem 1.5rem;
+  box-sizing: border-box;
+  text-align: right;
+  border-radius: 8px 8px 0 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.display span {
+  font-weight: 400;
+  font-size: 0.85rem;
+  float: right;
+  opacity: 0.7;
+}
+
+/* Buttons Base */
+button {
+  font-size: 1.25rem;
+  border: none;
+  background-color: #09354a;
+  color: #e1e1e1;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  outline-offset: -4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+button:focus {
+  outline: 3px solid #3eaefc;
+}
+
+button:hover {
+  background-color: #0c4f68;
+}
+
+/* Special buttons */
+.btn-clear {
+  background-color: #ff3347;
+  color: white;
+  font-weight: 700;
+}
+
+.btn-clear:hover {
+  background-color: #e32c3f;
+}
+
+.btn-equal {
+  background-color: #2a9df4;
+  color: white;
+  grid-row: 5 / 7;
+}
+
+.btn-equal:hover {
+  background-color: #2382d1;
+}
+
+/* Layout buttons */
+.btn-00 {
+  font-size: 1rem;
+}
+
+/* Operators */
+.operator {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
